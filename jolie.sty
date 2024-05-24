@@ -1,0 +1,20 @@
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{jolie}[2023/11/20 Jolie package]
+
+\RequirePackage{listings}
+
+\lstdefinelanguage{jolie}{
+  morekeywords={as,csets,configType,raw,any,undefined,void,default,type,
+    if,for,while,spawn,foreach,else,define,main,include,from,provide,until,
+    constants,inputPort,outputPort,interface,execution,cset,over,in,
+    nullProcess,RequestResponse,OneWay,throw,throws,install,comp,cH,this,
+    scope,embedded,init,synchronized,global,instanceof,is_defined,
+    is_int,is_bool,is_long,is_string,bool,long,int,string,
+    double,undef,with,location,protocol,interfaces,aggregates,courier,
+    redirects,import,embed,service,binding,foreign,InputPort,OutputPort,implementation},
+  sensitive,
+	morecomment=[l]//,
+	morecomment=[s]{/*}{*/},
+	morestring=[b]",
+  morestring=[b]',
+}[keywords,comments,strings]
